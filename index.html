@@ -19,25 +19,35 @@
 			<section class="main-section" id="comments">
 				<header>Comments</header>
 				<p>
-					There are two ways to comment your code in Ruby.
+					There are a couple ways to comment your code in Ruby.
 				</p>
-				<ul>
+				<ol>
 					<li>Single-Line:
 						<br>
 						<code>
 							# A single-line comment begins with a hashtag.
 						</code>
 					</li>
-					<li>Multi-Line:
+					<li>
+						Multi-Line:
+						<br>
+						<code>
+							# A multi-line comment can begin with a hashtag.<br>
+							# Each following line<br>
+							# also begins with a hashtag.
+						</code>
+					</li>
+					<li>Block Comment:
 						<br>
 						<code>
 							=begin<br>
-							Multi-line comments<br>
-							are nested between =begin and =end<br>
+							&nbsp;&nbsp;Multi-line comments<br>
+							&nbsp;&nbsp;can also be nested between =begin and =end.<br>
+							&nbsp;&nbsp;This style is known as "block commenting."<br>
 							=end
 						</code>
 					</li>
-				</ul>
+				</ol>
 				<p>
 					Add comments to explain your code to other readers (including your future self.
 					It's also helpful to note that commented code will not be executed.
