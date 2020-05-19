@@ -1,15 +1,44 @@
-footer {
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+@media (min-width:320px) {
+  /* smartphones */
+  nav {
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border: 3px solid red;
+  }
 
-footer ul {
-  list-style-type: none;
-  padding: 10px;
-}
+  nav ul {
+    list-style-type: none;
+  }
 
-#logo {
-  height: 50px;
+  .nav-link {
+    float: left;
+    padding: 10px;
+  }
+
+  #main-doc {
+    position: relative;
+    top: 80px;
+    padding: 15px;
+    border: 3px solid red;
+
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+  }
+
+  footer ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  #logo {
+    height: 50px;
+  }
 }
+@media (min-width:600px) {
+  /* tablets and larger */
+  }
