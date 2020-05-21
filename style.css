@@ -45,6 +45,7 @@ header {
   color: var(--nav-text-color);
   font-size: larger;
   border-bottom: 5px solid transparent;
+  text-decoration: none;
 }
 
 #navbar a:hover {
