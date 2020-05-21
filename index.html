@@ -45,28 +45,34 @@
 				<ol>
 					<li>Single-Line:
 						<br>
-						<code>
-							# A single-line comment begins with a hashtag.
-						</code>
+						<div class="code-block">
+							<code>
+								# A single-line comment begins with a hashtag.
+							</code>
+						</div>
 					</li>
 					<li>
 						Multi-Line:
 						<br>
-						<code>
-							# A multi-line comment can begin with a hashtag.<br>
-							# Each following line<br>
-							# also begins with a hashtag.
-						</code>
+						<div class="code-block">
+							<code>
+								# A multi-line comment can begin with a hashtag.<br>
+								# Each following line<br>
+								# also begins with a hashtag.
+							</code>
+						</div>
 					</li>
 					<li>Block Comment:
 						<br>
-						<code>
-							=begin<br>
-							&nbsp;&nbsp;Multi-line comments<br>
-							&nbsp;&nbsp;can also be nested between =begin and =end.<br>
-							&nbsp;&nbsp;This style is known as "block commenting."<br>
-							=end
-						</code>
+						<div class="code-block">
+							<code>
+								=begin<br>
+								&nbsp;&nbsp;Multi-line comments<br>
+								&nbsp;&nbsp;can also be nested between =begin and =end.<br>
+								&nbsp;&nbsp;This style is known as "block commenting."<br>
+								=end
+							</code>
+						</div>
 					</li>
 				</ol>
 				<p>
@@ -85,18 +91,22 @@
 					Ruby variables are declared using the assignment operator, also known as the equal sign (=).
 					The variable name goes to the left, and the value is placed on the right.
 				</p>
-				<code>
-					# the variable, x, equals the value, 1234.<br>
-					x = 1234
-				</code>
+				<div class="code-block">
+					<code>
+						# the variable, x, equals the value, 1234.<br>
+						x = 1234
+					</code>
+				</div>
 				<p>
 					If you need to declare a constant, simply begin your variable name with a capital letter.
 					It is common convention to use all caps for constants.
 				</p>
-				<code>
-					Constant = "I'm a constant."<br>
-					BETTERCONSTANT = "I'm a constant that follows conventions."
-				</code>
+				<div class="code-block">
+					<code>
+						Constant = "I'm a constant."<br>
+						BETTERCONSTANT = "I'm a constant that follows conventions."
+					</code>
+				</div>
 			</section>
 			<section class="main-section" id="methods">
 				<header><h2>Methods</h2></header>
@@ -109,19 +119,23 @@
 					It is good practice to name your method in a way that describes its purpose.
 					Close the method definition with the keyword <code>end</code>.
 				</p>
-				<code>
-					def say_hello<br>
-					&nbsp;&nbsp;puts "Hello World"<br>
-					end
-				</code>
+				<div class="code-block">
+					<code>
+						def say_hello<br>
+						&nbsp;&nbsp;puts "Hello World"<br>
+						end
+					</code>
+				</div>
 				<p>
 					To invoke a method, simply say the method's name.
 				</p>
-				<code>
-					# Let's invoke our previous method.<br>
-					say_hello<br>
-					=> "Hello World"
-				</code>
+				<div class="code-block">
+					<code>
+						# Let's invoke our previous method.<br>
+						say_hello<br>
+						=> "Hello World"
+					</code>
+				</div>
 			</section>
 			<section class="main-section" id="arrays_and_hashes">
 				<header><h2>Arrays and Hashes</h2></header>
@@ -143,25 +157,29 @@
 				<p>
 					Let's look at an array:
 				</p>
-				<code>
-					# An array is surrounded by square brackets.<br>
-					# Each element is separated by a comma.<br>
-					[ "This", "is", "an", "array", 1, true, false ]
-				</code>
+				<div class="code-block">
+					<code>
+						# An array is surrounded by square brackets.<br>
+						# Each element is separated by a comma.<br>
+						[ "This", "is", "an", "array", 1, true, false ]
+					</code>
+				</div>
 				<p>
 					Let's look at a hash:
 				</p>
-				<code>
-					# An array is surrounded by curly brackets.<br>
-					# Data is stored in key: value pairs.<br>
-					# These pairs are separated by commas.<br>
-					{<br>
-					&nbsp;&nbsp;key: value,<br>
-					&nbsp;&nbsp;key_with_array_value: ["another", "array"],<br>
-					&nbsp;&nbsp;yet_another_key: 12345,<br>
-					&nbsp;&nbsp;key_with_boolean: false<br>
-					}
-				</code>
+				<div class="code-block">
+					<code>
+						# An array is surrounded by curly brackets.<br>
+						# Data is stored in key: value pairs.<br>
+						# These pairs are separated by commas.<br>
+						{<br>
+						&nbsp;&nbsp;key: value,<br>
+						&nbsp;&nbsp;key_with_array_value: ["another", "array"],<br>
+						&nbsp;&nbsp;yet_another_key: 12345,<br>
+						&nbsp;&nbsp;key_with_boolean: false<br>
+						}
+					</code>
+				</div>
 			</section>
 		</main>
 		
