@@ -1,10 +1,30 @@
+:root {
+  --main-bg-color: #ffcad4;
+  --secondary-bg-color: #fef4fc;
+  --code-bg-color: #2f1820;
+  --main-text-color: #2f1820;
+  --code-text-color: #b1d0d3;
+  --headings-color: #5b2f3d
+}
+
+body {
+  background-image: url("pinkMarbleBg.jpg");
+  background-color: var(--main-bg-color);
+  background-size: cover;
+  color: var(--main-text-color)
+}
+
+header {
+  color: var(--headings-color);
+  text-align: center;
+}
+
 #navbar {
   text-align: center;
   height: 100px;
   position: sticky;
-  background-color: lightblue;
   top: 0;
-  border: 3px solid red;
+  background-color: var(--main-bg-color);
 }
 
 #navbar h1 {
@@ -28,14 +48,27 @@
 
 #main-doc {
   top: 100px;
-  padding: 15px;
-  border: 3px solid red;
+}
 
+section {
+  background-color: var(--secondary-bg-color);
+}
+
+.code-block {
+  background-color: var(--code-bg-color);
+  width: 90%;
+  padding: 3px;
+  margin: 5px;
+}
+
+code {
+  color: var(--code-text-color);
 }
 
 footer {
   text-align: center;
   width: 100%;
+  background-color: var(--main-bg-color);
 }
 
 footer ul {
