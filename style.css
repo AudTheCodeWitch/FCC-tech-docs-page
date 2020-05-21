@@ -56,13 +56,14 @@ section {
 
 .code-block {
   background-color: var(--code-bg-color);
-  width: 90%;
+  max-width: 90%;
   padding: 3px;
-  margin: 5px;
+  margin: 5px auto;
 }
 
 code {
   color: var(--code-text-color);
+  background-color: var(--code-bg-color);
 }
 
 footer {
