@@ -1,8 +1,10 @@
 :root {
   --main-bg-color: #ffcad4;
   --secondary-bg-color: #fef4fc;
+  --nav-bg-color: #2f1820;
   --code-bg-color: #2f1820;
   --main-text-color: #2f1820;
+  --nav-text-color: #b1d0d3;
   --code-text-color: #b1d0d3;
   --headings-color: #5b2f3d
 }
@@ -17,6 +19,7 @@ body {
 header {
   color: var(--headings-color);
   text-align: center;
+  margin-top: 20px;
 }
 
 #navbar {
@@ -25,25 +28,27 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--main-bg-color);
+  padding-bottom: 10px;
 }
 
 #navbar h1 {
-  font-size: 32px;
+  font-size: xx-large;
   margin: 10px 0;
+  padding: 10px;
+
 }
 
-#navbar ul {
-  width: 100%;
-  list-style-type: none;
-  margin: auto;
-  padding: 10px 0;
-  white-space: nowrap;
-  overflow-x: auto;
+#navbar a {
+  margin: 10px auto;
+  padding: 10px;
+  background: var(--nav-bg-color);
+  color: var(--nav-text-color);
+  font-size: larger;
+  border-bottom: 5px solid transparent;
 }
 
-#navbar li {
-  display: inline-block;
-  padding: 0 10px;
+#navbar a:hover {
+  border-bottom: 5px solid var(--nav-text-color);
 }
 
 #main-doc {
@@ -52,13 +57,25 @@ header {
 
 section {
   background-color: var(--secondary-bg-color);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 10px auto;
+
+}
+
+section p {
+  margin: 20px;
+}
+
+section li .code-block {
+  margin-left: 0;
 }
 
 .code-block {
   background-color: var(--code-bg-color);
   max-width: 90%;
-  padding: 3px;
-  margin: 5px auto;
+  padding: 20px;
+  margin: 20px auto;
 }
 
 code {
