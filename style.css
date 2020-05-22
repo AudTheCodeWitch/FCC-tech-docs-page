@@ -74,7 +74,7 @@ section li .code-block {
 
 .code-block {
   background-color: var(--code-bg-color);
-  max-width: 90%;
+  width: 90%;
   padding: 20px;
   margin: 20px auto;
 }
@@ -101,4 +101,33 @@ footer ul {
 
 @media (min-width:600px) {
   /* tablets and larger */
+  #navbar {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #navbar a {
+    display: block;
+  }
+
+  #main-doc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 78%;
+    padding-bottom: 200px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+  }
+
+  footer ul {
+    margin-top: 0;
+  }
   }
